@@ -125,3 +125,7 @@ EMAIL_USE_TLS = True
 #这里的FLASKY_MAIL_SENDER环境变量设置形式为：１２３４５＠qq.com
 DEFAULT_FROM_EMAIL = os.environ.get('FLASKY_MAIL_SENDER')
 SERVER_EMAIL = os.environ.get('FLASKY_MAIL_SENDER')
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
