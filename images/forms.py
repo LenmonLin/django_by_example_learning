@@ -18,6 +18,8 @@ class ImageCreateForm(forms.ModelForm):
         url = self.cleaned_data['url']
         #由于教程上提供的地址被墙，这里提供一个不用翻墙的图片
         # 地址（是个小太阳，亲测可用）：http://1.su.bdimg.com/icon/weather/a0.jpg
+        # 这里应该在搜索引擎中搜索图片外链网站，这样你就可用自己传图片到因特网上；
+        # 地址二：http://p1.bqimg.com/1949/c2eeb87f73ae3d18.jpg
         valid_extensions = ['jpg', 'jpeg']
         extension = url.rsplit('.', 1)[1].lower()
         if extension not in valid_extensions:
